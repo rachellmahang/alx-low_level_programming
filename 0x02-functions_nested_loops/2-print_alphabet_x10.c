@@ -1,16 +1,27 @@
 #include "main.h"
 
 /**
- * print_alphabet - will print all lowercase alphabet
- * Description - Alphabet code is string
- * Return: Check with my code
+ * print_alphabet_x10 - This is the main function
+ * main - start here
+ * Description: This is to print ten times alphabet
+ * Return: Always as specified
  */
 void print_alphabet_x10(void)
 {
-	char c;
+	char ch;
+	int i;
 
-	for (c = 'a'; c <= 'z'; c++)
-		_putchar(c);
+	i = 0;
 
-	_putchar('\n');
+	while (i < 10)
+	{
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }
