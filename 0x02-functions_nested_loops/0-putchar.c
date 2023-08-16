@@ -2,7 +2,7 @@
 /**
  * main - point_putchar
  *
- * return: 0
+ * Return: 0
  */
 
 int main(void)
@@ -12,9 +12,9 @@ int main(void)
 	_putchar('u');
 	_putchar('t');
 	_putchar('c');
-	-putchar('h');
+	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	-putchar('\n');
+	_putchar('\n');
 	return (0);
 }
