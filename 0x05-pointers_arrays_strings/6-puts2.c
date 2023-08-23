@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * puts2 - is the code to print other character
+ * puts2 - printing the code of other character
  * @str: is the string value
  *
  */
