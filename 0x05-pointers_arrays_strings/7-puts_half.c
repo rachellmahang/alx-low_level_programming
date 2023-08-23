@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts_half - prints the remianing of a string
+ * puts_half - printing the remaining string
  *
  * @str: the string input
  *
