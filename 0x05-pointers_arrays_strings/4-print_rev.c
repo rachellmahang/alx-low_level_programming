@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - is the main function
- * @s: is the integer used
+ * print_rev - a function that prints a string, in reverse, followed by a new line.
+ * @s: is the integer
  */
 void print_rev(char *s)
 {
