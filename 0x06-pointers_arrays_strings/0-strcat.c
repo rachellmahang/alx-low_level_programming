@@ -7,7 +7,7 @@
  * @dest: second interger
  * Return: void
  */
-char *_strcat(char *src, *dest)
+char _strcat(char src, dest)
 {
 	int r;
 	int x;
