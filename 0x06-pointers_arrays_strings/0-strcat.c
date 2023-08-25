@@ -7,23 +7,23 @@
  * @dest: second interger
  * Return: void
  */
-char _strcat(char src, dest)
+char *_strcat(char *src, char *dest)
 {
 	int r;
 	int x;
 
 	r = 0;
-	while (src[r] != '\0')
+	while (src [r] != '\0')
 	{
 		r++;
 	}
-	x = o;
-	while (dest[x] != '\0')
+	x = 0;
+	while (dest [x] != '\0')
 	{
-		src[r] = dest[x];
+		src [r] = dest [x];
 		r++;
 		x++;
 	}
-	src[r] = '\0';
+	src [r] = '\0';
 	return (src);
 }
