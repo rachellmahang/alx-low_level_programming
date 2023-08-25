@@ -7,20 +7,20 @@
  * @n: third integer
  * Return: src
  */
-char _strncat(char src, char dest, int n)
+char *_strncat(char *src, char *dest, int n)
 {
 	int r;
 	int x;
 
 	r = 0;
-	while (src[r] != '\0')
+	while (src [r] != '\0')
 	{
 		r++;
 	}
 	x = 0;
-	while (x < n && dest[x] != '\0')
+	while (x < n && dest [x] != '\0')
 	{
-		src[r] = dest[x];
+		src [r] = dest [x];
 		r++;
 		x++;
 	}
