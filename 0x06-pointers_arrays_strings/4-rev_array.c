@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * reverse_array -  a function that reverses the content of an array
- * @a: first interger
- * @n: is the second interger
+ * reverse_array - is the reverse function
+ * @a: is the first string
+ * @n: is the second string used
  *
  */
-void reverse_array(int a, int n)
+void reverse_array(int *a, int n)
 {
-	int r
+	int i, temp;
 
-	for (r = 0; r < n / 2; r++)
+	for (i = 0; i < n / 2; i++)
 	{
-		r = a[r];
-		a[r] = a[n - r  -1];
-		a[n - r -1] = r;
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
 	}
 }
