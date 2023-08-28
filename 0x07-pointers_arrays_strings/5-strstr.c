@@ -8,7 +8,7 @@
  * @needle: value
  * Return: As mentioned
  */
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
 	size_t needle_len = strlen(needle);
 
