@@ -13,6 +13,8 @@ size_t _strpn(char *s, char *accept)
 	size_t len = 0;
 
 	while (*s && strchr(accept, *s++))
+	{
 		len++;
+	}
 	return (len);
 }
