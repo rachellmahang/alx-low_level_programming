@@ -8,7 +8,7 @@
  *  @accept: value of byte
  *  Return: as mentioned
  */
-size_t _strpn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	size_t len = 0;
 
