@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *  _strpn -  a function that gets the length of a prefix substring.
+ *  _strspn -  a function that gets the length of a prefix substring.
  *  @s: initial segment
  *  @accept: value of byte
  *  Return: as mentioned
