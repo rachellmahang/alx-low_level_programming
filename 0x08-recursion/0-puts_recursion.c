@@ -6,15 +6,17 @@
  * @s: this is the string
  * Return: as mentioned
  */
-void _puts_recursion(char *s)
+void _puts_recursion(char *s);
 {
-
-	if (*s == '\0')
+	if (*s)
 	{
-		printf("\n");
-		return (0);
+		putchar(*s);
+		_puts_recursion(s + 1);
 	}
-	printf("%c", *s);
-	_puts_recursion(s + 1);
+	else
+	{
+		putchar("\n");
+	}
 	return (0);
+
 }
