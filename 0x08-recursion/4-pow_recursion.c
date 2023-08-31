@@ -1,11 +1,10 @@
 #include "main.h"
 #include <math.h>
-
 /**
- *  _pow_recursion - a function returning the values
- *  @x: the string
- *  @y: value
- *  Return: as mentioned
+ * _pow_recursion - is the function that returns the value to the power
+ * @x: is the string
+ * @y: is the value
+ * Return: as specified
  */
 int _pow_recursion(int x, int y)
 {
