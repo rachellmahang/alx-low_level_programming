@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * prime_a - a function
- * @a: a string
- * @b: value
+ * prime_a - Calculate if its a prime
+ * @a: input
+ * @b: divisor
  * Return: (0)
  */
 int prime_a(int a, int b)
@@ -18,9 +18,9 @@ int prime_a(int a, int b)
 	return (prime_a(a, b + 1));
 }
 /**
- * is_prime_number - a function
- * @n: value
- * Return: 0 
+ * is_prime_number - detect if its a prime no
+ * @n: the input number
+ * Return: 0 or 1
  */
 int is_prime_number(int n)
 {
