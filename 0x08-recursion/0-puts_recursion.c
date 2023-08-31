@@ -6,7 +6,7 @@
  * @s: this is the string
  * Return: as mentioned
  */
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 	if (*s)
 	{
