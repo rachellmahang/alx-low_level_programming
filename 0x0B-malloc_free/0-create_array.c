@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdlid.h>
+#include <stdlib.h>
 
 /**
- * main - comment of char
+ * create_array - comment of char
  * @c: is the char
- * @ size: number
+ * @size: number
  * Return: As mentioned
  */
 char *create_array(unsigned int size, char c)
@@ -16,12 +16,11 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	array = malloc(sizeof(char) *size);
+	array = malloc(sizeof(char) * size);
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	
 	for (i = 0; i < size; i++)
 		array[i] = c;
 	return (array);
