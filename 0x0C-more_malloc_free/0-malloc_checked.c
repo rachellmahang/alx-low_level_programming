@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * malloc_checked - is the function to check memory address
- * @b: is the integer 
+ * @b: is the integer
  * Return: as mentioned
  */
 void *malloc_checked(unsigned int b)
