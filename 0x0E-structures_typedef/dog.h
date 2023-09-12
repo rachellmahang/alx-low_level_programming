@@ -1,25 +1,22 @@
-#ifndef dog_H
-#define dog_H
+#ifndef DOG_H
+#define DOG_H
 /**
- * struct dog - is the function
- * @name: is the element
+ * struct dog - is the user input for structure
+ * @name: is the name of the dog
  * @age: is the age of the dog
  * @owner: is the owner of the dog
- * Return: as mentioned
  */
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
-{
-	struct dog my_dog;
+typedef struct dog dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
-	my_dog.name = "Fido";
-	my_dog.age = 4.5;
-	my_dog.owner = "Alice";
-
-	return (0);
-}
+#endif
