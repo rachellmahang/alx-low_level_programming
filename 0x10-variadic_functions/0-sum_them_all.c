@@ -11,8 +11,9 @@
 int sum_of_elements(int *array, int size)
 {
 	int sum = 0;
+	int i;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		sum += array[i];
 	}
