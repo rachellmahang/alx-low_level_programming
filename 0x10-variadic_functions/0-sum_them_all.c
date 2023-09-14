@@ -2,20 +2,25 @@
 #include "variadic_functions.h"
 
 /**
- * sum_of_elements - function that returns all parameters
- * @array: is the array
- * @size: is the size of the array
+ * sum_them_all - function that returns all parameters
+ * @n: the value
  * Return: as mentioned
  */
-
-int sum_of_elements(int *array, int size)
+int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0;
-	int i;
+	unsigned int i;
+	va_list args;
 
-	for (i = 0; i < size; i++)
-	{
-		sum += array[i];
-	}
+	if (n == 0)
+		return (0);
+
+	va_start(args, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(args, int);
+
+	va_end(args);
+
 	return (sum);
 }
