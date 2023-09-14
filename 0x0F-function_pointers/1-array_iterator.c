@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
- * array_iterator - a function that exacutes a function
+ * array_iterator - is function used to exacutes a function
  * @array: is the array
- * @size: is the pointer
- * @f: is the pointer
+ * @size: is the size of the array
+ * @action: is the pointer
  */
-
-void array_iterator(int *array, int size, void (*f)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
@@ -15,8 +14,9 @@ void array_iterator(int *array, int size, void (*f)(int))
 	{
 		return;
 	}
-	for (int i = 0; i < size; i++)
+
+	for (i = 0; i < size; i++)
 	{
-		f(array[i]);
+		action(array[i]);
 	}
 }
