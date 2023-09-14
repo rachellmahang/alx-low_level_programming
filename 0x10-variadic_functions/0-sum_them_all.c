@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "variadic_functions"
+#include "variadic_functions.h"
 
 /**
  * sum_of_elements - function that returns all parameters
