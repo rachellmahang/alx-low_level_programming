@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include "lists.h"
+#include "listint.h"
 
 /**
- * print_list - a function that prints all elements
- * @head: is the string
+ * print_listint - a function that prints all elements
+ * @h: is the string
+ * @Return: as mentioned
  */
 
-void print_list(listint_t *head)
+size_t print_listint(const listint_t *h)
 {
-	listint_t *current = head;
+	size_t nodes = 0;
+	const listint_t *current = h;
 
 	while (current != NULL)
 	{
-		printf("%d\n", current->n)
+		printf("%d\n", current->n);
 		current = current->next;
+		nodes++;
 	}
+
+	return nodes;
 }
