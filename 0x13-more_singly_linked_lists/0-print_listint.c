@@ -4,7 +4,7 @@
 /**
  * print_listint - a function that prints all elements
  * @h: is the string
- * @Return: as mentioned
+ * Return: as mentioned
  */
 
 size_t print_listint(const listint_t *h)
@@ -18,6 +18,5 @@ size_t print_listint(const listint_t *h)
 		current = current->next;
 		nodes++;
 	}
-
-	return nodes;
+	return (nodes);
 }
