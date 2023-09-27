@@ -6,10 +6,10 @@
  * @head: is the pointer
  */
 
-void free_listint2(listint_t **head)
+void free_listint2(listint_t *head)
 {
-	listint_t *temp
-	listint_t *current = *head;
+	lists_t *temp
+	lists_t *current = *head;
 
 	while (current != NULL)
 	{
@@ -18,5 +18,5 @@ void free_listint2(listint_t **head)
 		free(temp);
 	}
 
-	*head = NULL;
+	*head = (NULL);
 }
