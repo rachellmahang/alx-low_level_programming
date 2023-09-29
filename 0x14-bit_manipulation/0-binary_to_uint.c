@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include "main.h"
+#include <stddef.h>
 
 /**
  * binary_to_uint - a function that convert binary to unsigned int
@@ -9,23 +10,23 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
+	unsigned int i = 0;
+
+	if (b == 0)
 	{
 		return (0);
 	}
-
-	unsigned int num = 0;
 
 	while (*b)
 
 	{
 		if (*b == '1')
 		{
-			num = (num << 1) | 1;
+			i = (i << 1) | 1;
 		}
 		else if (*b == '0')
 		{
-			num = num << 1;
+			i = i<< 1;
 		}
 		else
 		{
@@ -33,5 +34,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 		b++;
 	}
-	return (num);
+	return (i);
 }
