@@ -3,40 +3,35 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-
 /**
- * append_text_to_file - a function that appends texts at the end of a file
+ * append_text_to_file - a function that appends texts to files
  * @filename: is the pointer
  * @text_content: is the pointer
  * Return: as mentioned
  */
-
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd;
-	ssize_t write_count;
-	size_t length = 0;
+	int i;
+	ssize_t write_text;
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_WRONLY | O_APPEND);
-	if (fd == -1)
+	i = open(filename, O_WRONLY | O_APPEND);
+	if (i == -1)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		while (text_content[length])
-			length++;
-
-		write_count = write(fd, text_content, length);
-		if (write_count == -1 || write_count != length)
+		write_text = write(i, text_content, strlen(text_content));
+		if (write_text == -1)
 		{
-			close(fd);
+			close(i);
 			return (-1);
 		}
 	}
 
-	close(fd);
+	close(i);
 	return (1);
 }
+i
